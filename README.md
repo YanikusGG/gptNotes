@@ -11,11 +11,12 @@ TODO
 * [PRD](doc/PRD.pdf)
 * [SRS](doc/SRS.md)
 * [CJM](doc/CJM.jpg)
+* [ERD](doc/erd.png)
 
 ## How to build
 
-TODO
+```docker compose build postgresql pgadmin flask-app```
 
 ## How to run
 
-TODO
+```docker compose up -d postgresql pgadmin flask-app```

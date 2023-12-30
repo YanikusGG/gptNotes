@@ -1,0 +1,16 @@
+// https://dbdiagram.io
+// DBML Docs: https://dbml.dbdiagram.io/docs
+
+Table user {
+    id serial [primary key, not null]
+    username varchar [not null]
+    password varchar [not null]
+}
+
+Table note {
+    id serial [primary key, not null]
+    create_time timestamp [not null]
+    user_id integer [ref: > user.id, not null]
+    title varchar [not null]
+    text varchar [not null]
+}
